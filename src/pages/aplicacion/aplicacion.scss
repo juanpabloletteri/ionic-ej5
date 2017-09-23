@@ -1,3 +1,44 @@
 page-aplicacion {
-
+    .button-pink {
+        color: #F63566;
+        background-color: #6F50C2;
+        text-transform: uppercase;
+        font-size: 105%;
+        border: 9px solid #F63566;
+        padding: 15% 23%;
+        margin: auto;
+        white-space: nowrap;
+        text-align: center;
+        font-family: "SanFranciscoText-Regular";
+        font-weight: bold;
+        letter-spacing: 0.3em;
+    }
+    .button-red {
+        color: #BD1A1A;
+        background-color: #62B65F;
+        text-transform: uppercase;
+        font-size: 105%;
+        border: 9px solid #35D9F6;
+        padding: 15% 23%;
+        margin: auto;
+        white-space: nowrap;
+        text-align: center;
+        font-family: "SanFranciscoText-Regular";
+        font-weight: bold;
+        letter-spacing: 0.3em;
+    }
+    .button-blue {
+        color: #3D1ABD;
+        background-color: #5FB0B6;
+        text-transform: uppercase;
+        font-size: 105%;
+        border: 9px solid #F3F635;
+        padding: 15% 23%;
+        margin: auto;
+        white-space: nowrap;
+        text-align: center;
+        font-family: "SanFranciscoText-Regular";
+        font-weight: bold;
+        letter-spacing: 0.3em;
+    }
 }

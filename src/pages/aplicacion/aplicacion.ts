@@ -13,9 +13,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   selector: 'page-aplicacion',
   templateUrl: 'aplicacion.html',
 })
+
 export class AplicacionPage {
 
+  tema: number = 0;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
+  asignarTema(num) {
+    switch (num) {
+      case 0: this.tema = 0;
+        break;
+      case 1: this.tema = 1;
+        break;
+      case 2: this.tema = 2;
+        break;
+      case 3: this.tema = 3;
+        break;
+    }
+    console.log(this.tema);
   }
 
   ionViewDidLoad() {

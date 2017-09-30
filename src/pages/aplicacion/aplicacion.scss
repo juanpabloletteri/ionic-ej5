@@ -1,44 +1,127 @@
 page-aplicacion {
-    .button-pink {
-        color: #F63566;
-        background-color: #6F50C2;
-        text-transform: uppercase;
-        font-size: 105%;
-        border: 9px solid #F63566;
-        padding: 15% 23%;
-        margin: auto;
-        white-space: nowrap;
-        text-align: center;
-        font-family: "SanFranciscoText-Regular";
-        font-weight: bold;
-        letter-spacing: 0.3em;
+    .container{
+        display: flex;
     }
-    .button-red {
-        color: #BD1A1A;
-        background-color: #62B65F;
-        text-transform: uppercase;
-        font-size: 105%;
-        border: 9px solid #35D9F6;
-        padding: 15% 23%;
-        margin: auto;
-        white-space: nowrap;
-        text-align: center;
-        font-family: "SanFranciscoText-Regular";
-        font-weight: bold;
-        letter-spacing: 0.3em;
+    .b01{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/01.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
     }
-    .button-blue {
-        color: #3D1ABD;
-        background-color: #5FB0B6;
-        text-transform: uppercase;
-        font-size: 105%;
-        border: 9px solid #F3F635;
-        padding: 15% 23%;
-        margin: auto;
-        white-space: nowrap;
-        text-align: center;
-        font-family: "SanFranciscoText-Regular";
-        font-weight: bold;
-        letter-spacing: 0.3em;
+    .b02{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/02.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b03{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/03.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b04{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/04.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b05{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/05.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    //////////////////////////////////////////////////////////////
+    .b11{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/11.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b12{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/12.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b13{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/13.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b14{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/14.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b15{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/15.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+     //////////////////////////////////////////////////////////////
+    .b21{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/21.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b22{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/22.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b23{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/23.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b24{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/24.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+    .b25{
+        padding: 17%;
+        align-items: stretch;
+        background-image: url("../assets/img/25.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
     }
 }

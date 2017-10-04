@@ -32,11 +32,13 @@ export class AplicacionPage {
       case 3: this.tema = 3;
         break;
     }
-    console.log(this.tema);
+    //console.log(this.tema);
   }
-
+  salir() {
+    this.navCtrl.pop();
+  }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AplicacionPage');
+    //console.log('ionViewDidLoad AplicacionPage');
   }
 
 }

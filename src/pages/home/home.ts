@@ -27,7 +27,7 @@ export class HomePage {
   login() {
     this.usuarios.forEach(element => {
       for (let i in element) {
-        console.log(i);
+        //console.log(i);
         if (element[i].nombre == this.usuario && element[i].clave == this.pass) {
           //SE ENCONTRO USUARIO
           this.usuario = element[i].nombre;

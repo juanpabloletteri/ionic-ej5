@@ -3,49 +3,56 @@
 </ion-header>
 
 
-  <ion-content padding *ngIf="tema==0" class="container">
-    <button ion-button full class="b01"></button>
-    <button ion-button full  class="b02"></button>
-    <button ion-button full class="b03"></button>
-    <button ion-button full  class="b04"></button>
-    <button ion-button full  class="b05"></button>
-  </ion-content>
+<ion-content padding *ngIf="tema==0" class="container">
+  <button ion-button full class="b01"></button>
+  <button ion-button full class="b02"></button>
+  <button ion-button full class="b03"></button>
+  <button ion-button full class="b04"></button>
+  <button ion-button full class="b05"></button>
+</ion-content>
 
 
 
-  <ion-content padding *ngIf="tema==1" class="prueba">
-    <button ion-button full class="b11"></button>
-    <button ion-button full  class="b12"></button>
-    <button ion-button full class="b13"></button>
-    <button ion-button full  class="b14"></button>
-    <button ion-button full  class="b15"></button>
-  </ion-content>
+<ion-content padding *ngIf="tema==1" class="prueba">
+  <button ion-button full class="b11"></button>
+  <button ion-button full class="b12"></button>
+  <button ion-button full class="b13"></button>
+  <button ion-button full class="b14"></button>
+  <button ion-button full class="b15"></button>
+</ion-content>
 
 
 
-  <ion-content padding *ngIf="tema==2">
-    <button ion-button full class="b21"></button>
-    <button ion-button full  class="b22"></button>
-    <button ion-button full class="b23"></button>
-    <button ion-button full  class="b24"></button>
-    <button ion-button full  class="b25"></button>
-  </ion-content>
+<ion-content padding *ngIf="tema==2">
+  <button ion-button full class="b21"></button>
+  <button ion-button full class="b22"></button>
+  <button ion-button full class="b23"></button>
+  <button ion-button full class="b24"></button>
+  <button ion-button full class="b25"></button>
+</ion-content>
 
 
 <ion-content padding *ngIf="tema==3">
   <button ion-button full class="b31"></button>
-  <button ion-button full  class="b32"></button>
+  <button ion-button full class="b32"></button>
   <button ion-button full class="b33"></button>
-  <button ion-button full  class="b34"></button>
-  <button ion-button full  class="b35"></button>
+  <button ion-button full class="b34"></button>
+  <button ion-button full class="b35"></button>
 </ion-content>
 
 <ion-fab left bottom>
-  <button ion-fab ><ion-icon name="md-share"></ion-icon></button>
+  <button ion-fab><ion-icon name="md-share"></ion-icon></button>
   <ion-fab-list side="top">
-    <button ion-fab (click)="asignarTema(0)">0</button>
-    <button ion-fab (click)="asignarTema(1)">1</button>
-    <button ion-fab (click)="asignarTema(2)">2</button>
-    <button ion-fab (click)="asignarTema(3)">3</button>
+    <button ion-fab (click)="asignarTema(0)">1</button>
+    <button ion-fab (click)="asignarTema(1)">2</button>
+    <button ion-fab (click)="asignarTema(2)">3</button>
+  </ion-fab-list>
+</ion-fab>
+
+<ion-fab right bottom>
+  <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+  <ion-fab-list side="top">
+    <button ion-fab (click)="salir(0)">Salir</button>
+    <button ion-fab>Grabar</button>
   </ion-fab-list>
 </ion-fab>

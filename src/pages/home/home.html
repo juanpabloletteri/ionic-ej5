@@ -27,10 +27,22 @@
       <ion-input type="password" placeholder="Password" [(ngModel)]="pass"></ion-input>
     </ion-item>
     <br>
-    <button ion-button color="primary" icon-end (click)="login()">
-            Ingresar
-            <ion-icon name='arrow-forward'></ion-icon>
-          </button>
+
+    <button *ngIf="posicion == 0" ion-button color="primary" icon-end (click)="login()" class="boton1">
+    Ingresar
+    <ion-icon name='arrow-forward'></ion-icon></button>
+
+    <button *ngIf="posicion == 1" ion-button color="primary" icon-end (click)="login()" class="boton2">
+      Ingresar
+      <ion-icon name='arrow-forward'></ion-icon></button>
+
+    <button *ngIf="posicion == 2" ion-button color="primary" icon-end (click)="login()" class="boton3">
+        I n g r e s a r
+        <ion-icon name='arrow-forward'></ion-icon></button>
+
+    <button *ngIf="posicion == 3" ion-button color="primary" icon-end (click)="login()" class="boton4">
+          Ingresar
+          <ion-icon name='arrow-forward'></ion-icon></button>
 
   </div>
 
@@ -45,18 +57,17 @@
     </ion-item>
 
     <ion-item>
-      <ion-input type="password" placeholder="Password" [(ngModel)]="pass1"></ion-input>
+      <ion-input type="password" placeholder="Contraseña" [(ngModel)]="pass1"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input type="password" placeholder="Confirme su Password" [(ngModel)]="pass2"></ion-input>
+      <ion-input type="password" placeholder="Confirme su Contraseña" [(ngModel)]="pass2"></ion-input>
     </ion-item>
     <br>
-    <button ion-button color="secondary" icon-start>
-            <ion-icon name='people'></ion-icon>
-              Registrar
-          </button>
-
+    <button ion-button color="secondary" icon-start (click)="registrar()">
+    <ion-icon name='people'></ion-icon>
+      Registrar
+  </button>
   </div>
 
   <ion-fab left bottom>
@@ -69,5 +80,6 @@
       <button ion-fab (click)="asignarUsuario('j2')">J2</button>
     </ion-fab-list>
   </ion-fab>
+
 
 </ion-content>

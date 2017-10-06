@@ -57,7 +57,7 @@ export class HomePage {
     console.log(this.usuario, this.email, this.pass1, this.pass2);
 
     this.usuarios.forEach(element => {
-      for (var i = 0; i < 5; i++) {
+      for (let i in element) {
         if (element[i].nombre == this.usuario) {
           //USUARIO REPETIDO
           let alert = this.alertCtrl.create({
@@ -93,11 +93,17 @@ export class HomePage {
         return;
       }
       //VERIFICACIONES CUMPLIDAS
-      this.usuarios.push({
-        $key: this.usuario,
-        clave: this.pass1,
-      })
-
+      //this.usuarios.push({ usuario: { clave: 123 } })
+      let alert = this.alertCtrl.create({
+        title: 'Registro exitoso',
+        subTitle: 'Felicitaciones, Usted ya esta registrado en la aplicacion',
+        buttons: ['OK']
+      });
+      alert.present();
+      this.usuario = "";
+      this.email = "";
+      this.pass1 = "";
+      this.pass2 = "";
     })
   }
   asignarUsuario(tipo) {

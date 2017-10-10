@@ -18,12 +18,12 @@ export class HomePage {
   pass1: string;
   pass2: string;
 
-  posicion: number = 0;
+  posicion: number = 3;
 
   esUsuario: boolean = true;
   usuarios: FirebaseListObservable<any>;
 
-  constructor(public navCtrl: NavController, public alertCtrl: AlertController, db: AngularFireDatabase, ) {
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController, db: AngularFireDatabase) {
     this.usuarios = db.list('/usuarios');
   }
   login() {
@@ -106,11 +106,13 @@ export class HomePage {
       this.pass2 = "";
     })
   }
+
   asignarUsuario(tipo) {
     switch (tipo) {
       case "admin": {
         this.usuario = "admin";
         this.pass = "11";
+
         break;
       }
       case "invitado": {

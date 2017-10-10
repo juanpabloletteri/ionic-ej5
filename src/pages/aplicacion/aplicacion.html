@@ -4,31 +4,31 @@
 
 
 <ion-content padding *ngIf="tema==0" class="container">
-  <button ion-button full class="b01"></button>
-  <button ion-button full class="b02"></button>
-  <button ion-button full class="b03"></button>
-  <button ion-button full class="b04"></button>
-  <button ion-button full class="b05"></button>
+  <button ion-button full class="b01" (click)="tocar('01')"></button>
+  <button ion-button full class="b02" (click)="tocar('02')"></button>
+  <button ion-button full class="b03" (click)="tocar('03')"></button>
+  <button ion-button full class="b04" (click)="tocar('04')"></button>
+  <button ion-button full class="b05" (click)="tocar('05')"></button>
 </ion-content>
 
 
 
 <ion-content padding *ngIf="tema==1" class="prueba">
-  <button ion-button full class="b11"></button>
-  <button ion-button full class="b12"></button>
-  <button ion-button full class="b13"></button>
-  <button ion-button full class="b14"></button>
-  <button ion-button full class="b15"></button>
+  <button ion-button full class="b11" (click)="tocar('11')"></button>
+  <button ion-button full class="b12" (click)="tocar('11')"></button>
+  <button ion-button full class="b13" (click)="tocar('11')"></button>
+  <button ion-button full class="b14" (click)="tocar('11')"></button>
+  <button ion-button full class="b15" (click)="tocar('11')"></button>
 </ion-content>
 
 
 
 <ion-content padding *ngIf="tema==2">
-  <button ion-button full class="b21"></button>
-  <button ion-button full class="b22"></button>
-  <button ion-button full class="b23"></button>
-  <button ion-button full class="b24"></button>
-  <button ion-button full class="b25"></button>
+  <button ion-button full class="b21" (click)="tocar('21')"></button>
+  <button ion-button full class="b22" (click)="tocar('21')"></button>
+  <button ion-button full class="b23" (click)="tocar('21')"></button>
+  <button ion-button full class="b24" (click)="tocar('21')"></button>
+  <button ion-button full class="b25" (click)="tocar('21')"></button>
 </ion-content>
 
 
@@ -41,7 +41,9 @@
 </ion-content>
 
 <ion-fab left bottom>
-  <button ion-fab><ion-icon name="md-share"></ion-icon></button>
+  <button ion-fab>
+    <ion-icon name="md-share"></ion-icon>
+  </button>
   <ion-fab-list side="top">
     <button ion-fab (click)="asignarTema(0)">1</button>
     <button ion-fab (click)="asignarTema(1)">2</button>
@@ -50,7 +52,9 @@
 </ion-fab>
 
 <ion-fab right bottom>
-  <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+  <button ion-fab color="danger">
+    <ion-icon name="md-share"></ion-icon>
+  </button>
   <ion-fab-list side="top">
     <button ion-fab (click)="salir(0)">Salir</button>
     <button ion-fab>Grabar</button>

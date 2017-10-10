@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
+import { NativeAudio } from '@ionic-native/native-audio';
+
 /**
  * Generated class for the AplicacionPage page.
  *
@@ -17,8 +19,28 @@ import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-an
 export class AplicacionPage {
 
   tema: number = 0;
+  numViejo: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, private nativeAudio: NativeAudio) {
+
+    this.nativeAudio.preloadSimple('01', 'assets/audio/01.mp3');
+    this.nativeAudio.preloadSimple('02', 'assets/audio/02.mp3');
+    this.nativeAudio.preloadSimple('03', 'assets/audio/03.mp3');
+    this.nativeAudio.preloadSimple('04', 'assets/audio/04.mp3');
+    this.nativeAudio.preloadSimple('05', 'assets/audio/05.mp3');
+
+    this.nativeAudio.preloadSimple('21', 'assets/audio/21.mp3');
+    this.nativeAudio.preloadSimple('22', 'assets/audio/22.mp3');
+    this.nativeAudio.preloadSimple('23', 'assets/audio/23.mp3');
+    this.nativeAudio.preloadSimple('24', 'assets/audio/24.mp3');
+    this.nativeAudio.preloadSimple('25', 'assets/audio/25.mp3');
+
+    this.nativeAudio.preloadSimple('31', 'assets/audio/31.mp3');
+    this.nativeAudio.preloadSimple('32', 'assets/audio/32.mp3');
+    this.nativeAudio.preloadSimple('33', 'assets/audio/33.mp3');
+    this.nativeAudio.preloadSimple('34', 'assets/audio/34.mp3');
+    this.nativeAudio.preloadSimple('35', 'assets/audio/35.mp3');
+
 
     let loader = this.loadingCtrl.create({
       content: "Cargando...",
@@ -46,5 +68,10 @@ export class AplicacionPage {
   ionViewDidLoad() {
     //console.log('ionViewDidLoad AplicacionPage');
   }
+  tocar(num: string) {
 
+    this.nativeAudio.stop(this.numViejo);
+    this.nativeAudio.play(num);
+    this.numViejo = num;
+  }
 }

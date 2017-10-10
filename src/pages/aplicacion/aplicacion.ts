@@ -29,17 +29,17 @@ export class AplicacionPage {
     this.nativeAudio.preloadSimple('04', 'assets/audio/04.mp3');
     this.nativeAudio.preloadSimple('05', 'assets/audio/05.mp3');
 
+    this.nativeAudio.preloadSimple('11', 'assets/audio/11.mp3');
+    this.nativeAudio.preloadSimple('12', 'assets/audio/12.mp3');
+    this.nativeAudio.preloadSimple('13', 'assets/audio/13.mp3');
+    this.nativeAudio.preloadSimple('14', 'assets/audio/14.mp3');
+    this.nativeAudio.preloadSimple('15', 'assets/audio/15.mp3');
+
     this.nativeAudio.preloadSimple('21', 'assets/audio/21.mp3');
     this.nativeAudio.preloadSimple('22', 'assets/audio/22.mp3');
     this.nativeAudio.preloadSimple('23', 'assets/audio/23.mp3');
     this.nativeAudio.preloadSimple('24', 'assets/audio/24.mp3');
     this.nativeAudio.preloadSimple('25', 'assets/audio/25.mp3');
-
-    this.nativeAudio.preloadSimple('31', 'assets/audio/31.mp3');
-    this.nativeAudio.preloadSimple('32', 'assets/audio/32.mp3');
-    this.nativeAudio.preloadSimple('33', 'assets/audio/33.mp3');
-    this.nativeAudio.preloadSimple('34', 'assets/audio/34.mp3');
-    this.nativeAudio.preloadSimple('35', 'assets/audio/35.mp3');
 
 
     let loader = this.loadingCtrl.create({
